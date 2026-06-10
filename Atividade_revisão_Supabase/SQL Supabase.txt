@@ -1,0 +1,26 @@
+-- 1. Tabela de Produtos (Caso queira recriar ou ajustar)
+create table produto (
+  id bigint generated always as identity primary key,
+  nome text not null,
+  descricao text,
+  quantidade int,
+  preco numeric,
+  categoria text
+);
+
+-- 2. Tabela de Clientes
+create table cliente (
+  id bigint generated always as identity primary key,
+  nome text not null,
+  email text,
+  telefone text,
+  cpf text
+);
+
+-- 3. Tabela de Músicas (Para a Atividade 03)
+create table musica (
+  id bigint generated always as identity primary key,
+  titulo text not null,
+  artista text,
+  genero text
+);
